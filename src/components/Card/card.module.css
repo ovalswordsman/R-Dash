@@ -1,0 +1,45 @@
+/* Card container */
+.card {
+  border-radius: 5px;
+  margin: 10px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Poster image */
+.poster {
+  /* Layout Properties */
+  top: 646px;
+  left: 146px;
+  width: 178px;
+  height: 239px;
+  /* UI Properties */
+
+  box-shadow: 0px 3px 6px #00000046;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+/* Movie name */
+.name {
+  text-align: left;
+  /* font: normal normal medium 16px/23px Rubik; */
+  letter-spacing: 0px;
+  color: #3d3d52;
+  opacity: 1;
+}
+
+/* Release date */
+.release-date {
+  top: 923px;
+  left: 146px;
+  width: 97px;
+  height: 19px;
+  text-align: left;
+  font: normal normal normal 16px/23px Rubik;
+  letter-spacing: 0px;
+  color: #aaaaaa;
+  opacity: 1;
+}
+

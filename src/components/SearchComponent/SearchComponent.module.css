@@ -1,0 +1,29 @@
+.searchContainer {
+    display: flex;
+    align-items: center;
+  }
+  .inputField {
+    flex: 1;
+    width: 835px;
+    height: 56px;
+  
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000058;
+    border-radius: 36px;
+    opacity: 1;
+    padding: 30px 19px;
+  }
+  .searchButton {
+    height: 46px;
+    width: 133px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 36px;
+    background: #ec2227 0% 0% no-repeat padding-box;
+    margin-left: -143px;
+  }
