@@ -1,20 +1,21 @@
 .searchContainer {
+    position: relative; /* Add position: relative to the container */
     display: flex;
     align-items: center;
-  }
-  .inputField {
+}
+
+.inputField {
     flex: 1;
     width: 835px;
     height: 56px;
-  
-    /* UI Properties */
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000058;
     border-radius: 36px;
     opacity: 1;
     padding: 30px 19px;
-  }
-  .searchButton {
+}
+
+.searchButton {
     height: 46px;
     width: 133px;
     color: #fff;
@@ -26,4 +27,41 @@
     border-radius: 36px;
     background: #ec2227 0% 0% no-repeat padding-box;
     margin-left: -143px;
-  }
+}
+
+.results {
+    position: absolute; /* Add position: absolute */
+    top: 100%; /* Position it below the search box */
+    max-height: 200px; /* Set a max height to make it scrollable */
+    overflow-y: auto; /* Add overflow-y for scrolling */
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.results li {
+    padding: 10px;
+    /* border-bottom: 1px solid #ccc; */
+    list-style: none;
+}
+
+
+.resultItem{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
+    /* justify-content: center; */
+}
+.resultItem:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.resultImage{
+    height: 20px;
+    align-items: flex-start;
+}
