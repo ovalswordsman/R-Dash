@@ -21,6 +21,10 @@ const SearchComponent = () => {
     }
   };
 
+  const handleClearSearch = () => {
+    // setSearchTerm("");
+    setSearchResults([]);
+  };
   const baseURL = "https://image.tmdb.org/t/p/w440_and_h660_face";
 
   return (
@@ -30,10 +34,22 @@ const SearchComponent = () => {
         placeholder="Search for movie, tv shoes, and person"
         className={styles.inputField}
         onChange={(e) => setSearchTerm(e.target.value)}
+        value={searchTerm}
       ></input>
       <button className={styles.searchButton} onClick={handleSearch}>
         Search
       </button>
+      {searchTerm.length > 0 && (
+        <span
+          className={styles.clearButton}
+          onClick={() => {
+            setSearchTerm("");
+            handleClearSearch();
+          }}
+        >
+          X
+        </span>
+      )}
       {searchResults.length > 0 && (
         <div className={styles.results}>
           {searchResults.map((result) => (
