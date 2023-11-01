@@ -2,7 +2,6 @@
   position: relative; /* Add position: relative to the container */
   display: flex;
   align-items: center;
-
 }
 
 .inputField {
@@ -17,17 +16,16 @@
 }
 
 .searchButton {
-  height: 46px;
-  width: 133px;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-left: 10px;
   cursor: pointer;
+  padding: 10px 20px;
   border-radius: 36px;
+  height: 54px;
+  width: 133px;
   background: #ec2227 0% 0% no-repeat padding-box;
-  margin-left: -143px;
+  position: absolute;
+
+  right: 10px; /* Position it to the right within the container */
 }
 
 .results {
@@ -66,11 +64,14 @@
   align-items: flex-start;
 }
 .clearButton {
+  position: absolute;
+  /* top: 50%; */
+  right: 136px;
+  /* transform: translate(0, -50%); */
   height: 46px;
-  width: 90px;
+  /* width: 90px; */
   color: black;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  margin-left: -180px;
 }
